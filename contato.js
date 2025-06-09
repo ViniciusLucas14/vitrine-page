@@ -6,8 +6,7 @@ const message = "Olá, tudo bem? \n Gostaria de falar com você sobre..."
 window.onload = function () {
     const btnSend = document.getElementById('btnSend');
     btnSend.onclick = function () {
-        console.log('passei');
-        sendEmail();
+        // sendEmail();
     };
 };
 

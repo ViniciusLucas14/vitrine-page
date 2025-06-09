@@ -45,9 +45,17 @@ nav {
 .loja,
 .dash {
   margin: 0 16px 0px 16px;
+
+  h2 {
+    place-self: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 
 .section-slogan {
+  padding: 2px;
+  justify-items: center;
   background-color: #eef6fb;
   text-align: center;
   flex-wrap: wrap;
@@ -153,6 +161,11 @@ nav {
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
   margin-bottom: 6px;
+
+  a {
+    text-decoration: none;
+    color: #eef6fb;
+  }
 }
 
 .custom-btn:hover {
@@ -167,4 +180,15 @@ nav {
 
 .height-default {
   min-height: 460px;
+}
+
+.form {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 400px;
+  margin: 12px;
 }

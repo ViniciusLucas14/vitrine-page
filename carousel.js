@@ -150,7 +150,7 @@ function buildCarousel(array, name) {
       carouselItem.className = `carousel-item${index === 0 ? " active" : ""}`;
 
       const itemsWrapper = document.createElement("div");
-      itemsWrapper.className = "items d-flex justify-content-center gap-3";
+      itemsWrapper.className = "items d-flex justify-content-evenly";
 
       group.forEach((card) => {
         itemsWrapper.appendChild(createCardContent(card.img, card.title, card.subtitle));

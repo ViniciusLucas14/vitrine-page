@@ -139,7 +139,7 @@ function buildCarousel(array, name) {
     const carouselInner = document.querySelector(".carousel-inner-" + c.name);
     carouselInner.innerHTML = "";
 
-    carouselInner.classList = isMobile ? "height-mobile" : "height-desktop"
+    carouselInner.classList = "height-default";
 
     const items = isMobile
       ? sliceBy(c.array, 1)
@@ -171,4 +171,4 @@ function sliceBy(arr, n) {
 }
 
 buildCarousel();
-window.addEventListener("resize", buildCarousel);
+// window.addEventListener("resize", buildCarousel);

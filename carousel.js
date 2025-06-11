@@ -1,46 +1,9 @@
-const cardShop = [
-  {
-    img: "./assets/img1.png",
-    title: "Personalize sua Loja",
-    subtitle: "Esse é o visual da sua loja. Você pode personalizar a cor do cabeçalho e adicionar a logomarca própria.",
-  },
-  {
-    img: "./assets/img2.png",
-    title: "Categorias",
-    subtitle: "Organize seus produtos por categorias e facilite a busca dos clientes.",
-  },
-  {
-    img: "./assets/img3.png",
-    title: "Produto detalhado",
-    subtitle: "Ao selecionar um produto, o cliente pode visualizar todos os detalhes antes de comprar."
-  },
-  {
-    img: "./assets/img8.png",
-    title: "Produto com variação",
-    subtitle: "Agrupe produtos com variações de cor ou tamanho informando a mesma referência."
-  },
-  {
-    img: "./assets/img4.png",
-    title: "Histórico de pedidos",
-    subtitle: "Seus clientes poderão consultar todos os pedidos feitos em sua loja.",
-  },
-  {
-    img: "./assets/img5.png",
-    title: "Cadastro de cliente",
-    subtitle: "Falando em clientes, temos um cadastro simples para que eles possam fazer seus pedidos com mais agilidade.",
-  },
-  {
-    img: "./assets/img6.png",
-    title: "Carrinho",
-    subtitle: "Todos os produtos que o cliente adicionar serão armazenados em um carrinho moderno e fácil de usar.",
-  },
-  {
-    img: "./assets/img7.png",
-    title: "Adaptável",
-    subtitle: "Tudo foi pensado para funcionar perfeitamente em computadores e celulares. Sua loja sempre vai se ajustar ao tamanho da tela.",
-  },
-];
 const cardAdm = [
+  {
+    img: "./assets/hands.png",
+    title: "Sua loja na palma da mão",
+    subtitle: "Administre tudo onde estiver, com praticidade e rapidez.",
+  },
   {
     img: "./assets/adm1.png",
     title: "Dashboard",
@@ -117,7 +80,7 @@ function createImgTag(linkImg) {
 
 function createDescriptionTag(title, subtitle) {
   const card = document.createElement("div");
-  card.className = "card-body d-flex flex-column justify-content-end";
+  card.className = "card-body d-flex flex-column";
 
   const h5 = document.createElement("h5");
   h5.className = "card-title";
@@ -132,34 +95,33 @@ function createDescriptionTag(title, subtitle) {
   return card;
 }
 
-function buildCarousel(array, name) {
-  const carrousels = [{ name: "adm", array: cardAdm }, { name: "shop", array: cardShop }];
-  carrousels.forEach(c => {
-    const isMobile = widthScreen();
-    const carouselInner = document.querySelector(".carousel-inner-" + c.name);
+function buildCarousel() {
+
+  const isMobile = widthScreen();
+  const carouselInner = document.querySelector(".carousel-inner-adm");
+  if (carouselInner) {
     carouselInner.innerHTML = "";
-
     carouselInner.classList = "height-default";
+  }
 
-    const items = isMobile
-      ? sliceBy(c.array, 1)
-      : sliceBy(c.array, 3);
+  const items = isMobile
+    ? sliceBy(cardAdm, 1)
+    : sliceBy(cardAdm, 2);
 
-    items.forEach((group, index) => {
-      const carouselItem = document.createElement("div");
-      carouselItem.className = `carousel-item${index === 0 ? " active" : ""}`;
+  items.forEach((group, index) => {
+    const carouselItem = document.createElement("div");
+    carouselItem.className = `carousel-item${index === 0 ? " active" : ""}`;
 
-      const itemsWrapper = document.createElement("div");
-      itemsWrapper.className = "items d-flex justify-content-evenly";
+    const itemsWrapper = document.createElement("div");
+    itemsWrapper.className = "items d-flex justify-content-evenly";
 
-      group.forEach((card) => {
-        itemsWrapper.appendChild(createCardContent(card.img, card.title, card.subtitle));
-      });
-
-      carouselItem.appendChild(itemsWrapper);
-      carouselInner.appendChild(carouselItem);
+    group.forEach((card) => {
+      itemsWrapper.appendChild(createCardContent(card.img, card.title, card.subtitle));
     });
-  })
+
+    carouselItem.appendChild(itemsWrapper);
+    carouselInner?.appendChild(carouselItem);
+  });
 }
 
 function sliceBy(arr, n) {
@@ -171,4 +133,4 @@ function sliceBy(arr, n) {
 }
 
 buildCarousel();
-// window.addEventListener("resize", buildCarousel);
+window.addEventListener("resize", buildCarousel);

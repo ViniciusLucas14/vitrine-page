@@ -12,16 +12,22 @@
 
 <body>
     <header>
-        <nav class="bg-body-new rounded-pill px-4 py-2">
-            <ul class="navbar-nav flex-row align-items-center gap-2">
-                <li class="nav-item">
-                    <a class="nav-link px-3 py-1" aria-current="page" href="index.html">Início</a>
+        <nav class="bg-body-new rounded-pill px-2 py-1">
+            <ul class="navbar-nav flex-row align-items-center space-around">
+                <li class="nav-item text-center">
+                    <a class="nav-link px-3 d-flex" aria-current="page" href="index.html">
+                        <img class="img-logo" src="./assets/logo.png" alt="">
+                        Criar loja
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-1" href="contato.html">Fale conosco</a>
+                    <a class="nav-link px-3" aria-current="page" href="index.html">Início</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link px-3" href="contato.html">Fale conosco</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-1" href="precos.html">Preços</a>
+                    <a class="nav-link px-3" href="precos.html">Preços</a>
                 </li>
             </ul>
         </nav>
@@ -47,12 +53,14 @@
                     <label class="form-label" for="message">Mensagem</label>
                     <textarea class="form-control" id="message" name="message" rows="4"></textarea>
                 </div>
-                <button id="btnSend" class="btn btn-primary btn-block mb-4">
+                <!-- <button id="btnSend" class="btn btn-primary btn-block mb-4">
                     Enviar
-                </button>
+                </button> -->
+                <span>ENVIO DE EMAIL EM DESENVOLVIMENTO</span>
             </form>
 
-            <a href="#" id="btnWhatsapp" class="btn btn-success btn-lg d-inline-flex align-items-center gap-2 mb-3 mt-3">
+            <a href="#" id="btnWhatsapp"
+                class="btn btn-success btn-lg d-inline-flex align-items-center gap-2 mb-3 mt-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-whatsapp" viewBox="0 0 16 16">
                     <path

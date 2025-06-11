@@ -12,20 +12,25 @@
 
 <body>
     <header>
-        <nav class="bg-body-new rounded-pill px-4 py-2">
-            <ul class="navbar-nav flex-row align-items-center gap-2">
-                <li class="nav-item">
-                    <a class="nav-link px-3 py-1" aria-current="page" href="index.html">Início</a>
+        <nav class="bg-body-new rounded-pill px-2 py-1">
+            <ul class="navbar-nav flex-row align-items-center space-around">
+                <li class="nav-item text-center">
+                    <a class="nav-link px-3 d-flex" aria-current="page" href="index.html">
+                        <img class="img-logo" src="./assets/logo.png" alt="">
+                        Criar loja
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-1" href="contato.html">Fale conosco</a>
+                    <a class="nav-link px-3" aria-current="page" href="index.html">Início</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link px-3" href="contato.html">Fale conosco</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 py-1" href="precos.html">Preços</a>
+                    <a class="nav-link px-3" href="precos.html">Preços</a>
                 </li>
             </ul>
         </nav>
-
     </header>
     <main>
         <section class="section-slogan">
@@ -34,34 +39,25 @@
                 <h2>traga sua loja para o digital</h2>
                 <p>Crie sua loja personalizada. Gerencie, agilize, aumente suas vendas</p>
             </section>
-            <section class="create-store">
+            <section class="create-store d-flex">
                 <img class="img-title" src="./assets/shop.svg" alt="Loja digital" />
                 <button type="button" class="btn custom-btn">
-                   <a href="https://adm.vitrinid.com.br/"> Criar minha loja </a>
+                    <a href="https://adm.vitrinid.com.br/"> Experimente a plataforma gratuitamente por 7 dias</a>
                 </button>
-
             </section>
         </section>
-        <section class="loja">
-            <h2>Loja</h2>
-            <div class="position-relative">
-                <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#cardCarousel-shop"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-primary"></span>
-                </button>
-                <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#cardCarousel-shop"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-primary"></span>
-                </button>
-
-                <div id="cardCarousel-shop" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner-shop">
-                    </div>
-                </div>
+        <section class="loja t-6 b-6">
+            <h2 class="text-center">Sua loja no celular ou computador. <br>Tudo foi pensado para funcionar em qualquer
+                dispositivo</h2>
+            <div class="d-flex justify-center devices">
+                <img class="img-size" src="./assets/three.png" alt="">
+                <img class="img-size" src="./assets/monitor.png" alt="">
             </div>
         </section>
-        <section class="dash">
-            <h2>Administrativo (Dashboard)</h2>
+        <section class="dash align-items-center">
+            <h2 class="text-center">Gerencie sua loja sem complicação</h2>
+            <span class="subtitle-adm">Cadastre produtos, acompanhe relatórios e automatize mensagens de pedidos
+                realizados — tudo aqui.</span>
             <div class="position-relative">
                 <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#cardCarousel-adm"
                     data-bs-slide="prev">

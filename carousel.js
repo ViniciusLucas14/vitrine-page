@@ -104,7 +104,7 @@ function buildCarousel() {
   const isMobile = widthScreen();
   const items = isMobile
     ? sliceBy(cardAdm, 1)
-    : sliceBy(cardAdm, 2);
+    : sliceBy(cardAdm, 3);
 
   items.forEach((group, index) => {
     const carouselItem = document.createElement("div");
@@ -131,3 +131,4 @@ function sliceBy(arr, n) {
 }
 
 buildCarousel();
+//TODO - CRIAR REDES SOCIAIS - REPLICAR O FOOTER

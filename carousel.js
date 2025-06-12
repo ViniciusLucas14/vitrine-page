@@ -2,7 +2,7 @@ const cardAdm = [
   {
     img: "./assets/hands.png",
     title: "Sua loja na palma da mão",
-    subtitle: "Administre tudo onde estiver, com praticidade e rapidez.",
+    subtitle: "Administre sua loja onde você estiver, com praticidade e rapidez.",
   },
   {
     img: "./assets/adm1.png",
@@ -96,14 +96,12 @@ function createDescriptionTag(title, subtitle) {
 }
 
 function buildCarousel() {
-
-  const isMobile = widthScreen();
   const carouselInner = document.querySelector(".carousel-inner-adm");
   if (carouselInner) {
     carouselInner.innerHTML = "";
-    carouselInner.classList = "height-default";
   }
 
+  const isMobile = widthScreen();
   const items = isMobile
     ? sliceBy(cardAdm, 1)
     : sliceBy(cardAdm, 2);
@@ -120,7 +118,7 @@ function buildCarousel() {
     });
 
     carouselItem.appendChild(itemsWrapper);
-    carouselInner?.appendChild(carouselItem);
+    carouselInner.appendChild(carouselItem);
   });
 }
 
@@ -133,4 +131,3 @@ function sliceBy(arr, n) {
 }
 
 buildCarousel();
-window.addEventListener("resize", buildCarousel);

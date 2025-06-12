@@ -66,26 +66,26 @@ nav {
   background-color: #eef6fb;
   text-align: center;
 
-  .create-store {
-    flex-direction: column;
-    align-items: center;
-
-    .img-title {
-      width: 28vh;
-      height: auto;
-    }
-  }
-
   h1 {
     font-size: 4.5rem;
     font-weight: 700;
-    margin-bottom: -24px;
+    margin-bottom: -12px;
     color: #4200ff;
   }
 
   h2 {
     font-size: 2.4rem;
     font-weight: 600;
+  }
+}
+
+.create-store {
+  flex-direction: column;
+  align-items: center;
+
+  .img-title {
+    width: 28vh;
+    height: auto;
   }
 }
 
@@ -160,7 +160,7 @@ nav {
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
-  margin: 0 1rem 0 1rem;
+  margin: 12px 1rem 0 1rem;
 
   a {
     text-decoration: none;
@@ -169,6 +169,7 @@ nav {
 }
 
 .custom-btn:hover {
+  color: #eef6fb;
   background-color: #4338ca;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(67, 56, 202, 0.5);
@@ -193,7 +194,7 @@ nav {
 }
 
 .img-size {
-  width: 40%;
+  width: 30%;
 }
 
 .justify-center {
@@ -248,8 +249,4 @@ nav {
 
 #cardCarousel {
   overflow: hidden;
-}
-
-.preco-margin {
-  margin-bottom: 15vh;
 }

@@ -131,4 +131,4 @@ function sliceBy(arr, n) {
 }
 
 buildCarousel();
-//TODO - CRIAR REDES SOCIAIS - REPLICAR O FOOTER
+//TODO - CRIAR REDES SOCIAIS - REPLICAR O FOOTER - PÁGINA SOBRE NÓS

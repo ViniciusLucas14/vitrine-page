@@ -60,7 +60,8 @@ nav {
 }
 
 .section-slogan {
-  padding: 2px;
+  padding: 1rem;
+
   justify-items: center;
   background-color: #eef6fb;
   text-align: center;
@@ -211,6 +212,26 @@ nav {
   padding: 0 1rem 0 1rem;
 }
 
+
+.about {
+  width: 50%;
+  padding: 1rem;
+
+  span {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    background-color: #f9f9f9;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid #4f46e5;
+    /* Indigo-600 */
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+}
+
 @media (max-width: 720px) {
   .img-size {
     width: 100%;
@@ -219,8 +240,16 @@ nav {
   .devices {
     display: block !important;
   }
+
+  .about {
+    width: 100%;
+  }
 }
 
 #cardCarousel {
   overflow: hidden;
+}
+
+.preco-margin {
+  margin-bottom: 15vh;
 }

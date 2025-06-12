@@ -104,7 +104,7 @@ function buildCarousel() {
   const isMobile = widthScreen();
   const items = isMobile
     ? sliceBy(cardAdm, 1)
-    : sliceBy(cardAdm, 3);
+    : sliceBy(cardAdm, 1);
 
   items.forEach((group, index) => {
     const carouselItem = document.createElement("div");

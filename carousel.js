@@ -12,11 +12,11 @@ const cardAdm = [
   {
     img: "./assets/adm2.png",
     title: "Opções",
-    subtitle: "Dashboard: acompanhe relátorios da loja" +
-      "\n Produtos: Cadastre, edite e exclua produtos " +
-      "\n Clientes: Saiba quem é o seu cliente" +
-      "\n Pedidos: acesso a pedidos e alteração" +
-      "\n Conta: Altere sua loja à qualquer momento",
+    subtitle: "Dashboard: acompanhe relátorios da loja - " +
+      "Produtos: Cadastre, edite e exclua produtos - " +
+      "Clientes: Saiba quem é o seu cliente - " +
+      "Pedidos: acesso a pedidos e alteração - " +
+      "Conta: Altere sua loja à qualquer momento",
   },
   {
     img: "./assets/adm3.png",

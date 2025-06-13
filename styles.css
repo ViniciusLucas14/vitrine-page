@@ -136,6 +136,7 @@ nav {
   }
 
   .card-body {
+    max-width: 81vh;
     padding: 1rem;
 
     .card-title {
@@ -146,6 +147,7 @@ nav {
     .card-text {
       white-space: pre-line;
       color: #555;
+      font-size: 20px;
     }
   }
 }
@@ -247,6 +249,9 @@ nav {
 
   .about {
     width: 100%;
+  }
+  .image-container{
+    height: fit-content !important;
   }
 }
 

@@ -50,6 +50,11 @@ const cardAdm = [
       "O intuito é agilizar o processo para a finalização da venda",
   },
   {
+    img: "./assets/adm10.png",
+    title: "Exiba as redes sociais da sua loja",
+    subtitle: "Aumente o alcance das suas redes sociais expondo-as na página",
+  },
+  {
     img: "./assets/adm9.png",
     title: "Adaptável",
     subtitle: "Tudo foi pensado para funcionar perfeitamente em computadores e celulares. Ajustado ao tamanho do dispositivo, tudo pode ser feito de qualquer aparelho.",

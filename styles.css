@@ -10,6 +10,7 @@ section {
 }
 
 header {
+  display: grid !important;
   padding: 16px 0 10px 0;
   position: sticky;
   top: 0;
@@ -23,7 +24,7 @@ header {
 
 .bg-body-new {
   border: 1.0px solid rgba(136, 136, 136, 0.4);
-  /* background-color: transparent; */
+    /* background-color: transparent; */
   border-radius: 50px;
   box-shadow: 0 2px 6px rgba(136, 136, 136, 0.25);
 }
@@ -112,7 +113,6 @@ nav {
 }
 
 .custom-card {
-  /* display: contents; */
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
@@ -250,7 +250,8 @@ nav {
   .about {
     width: 100%;
   }
-  .image-container{
+
+  .image-container {
     height: fit-content !important;
   }
 }
